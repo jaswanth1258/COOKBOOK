@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "https://hips.hearstapps.com/del.h-cdn.co/assets/15/44/1600x900/hd-aspect-1446063831-weeknight-din-tomato-soup.jpg?resize=1200:*",
+            "request": "launch",
+            "url": "https://hips.hearstapps.com/del.h-cdn.co/assets/15/44/1600x900/hd-aspect-1446063831-weeknight-din-tomato-soup.jpg?resize=1200:*"
+        }
+    ]
+}
