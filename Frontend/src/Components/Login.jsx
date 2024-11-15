@@ -13,7 +13,6 @@ function Login() {
   const login = async () => {
     await axios
       .post("http://localhost:4000/api/users/login", {
-        // .post("https://dbms-project-e4a5.onrender.com/api/users/login", {
         email: email_,
         password: password_,
       })

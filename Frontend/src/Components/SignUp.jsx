@@ -15,7 +15,6 @@ function SignUp() {
   const signup_post = async () => {
     await axios
       .post("http://localhost:4000/api/users/signup", {
-        // .post("https://dbms-project-e4a5.onrender.com/api/users/signup", {
         userName: userName_,
         name: name_,
         url: url_,

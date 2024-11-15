@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -15,18 +14,15 @@ function Horizontal_card(props) {
   }, []);
   const delete_recipe = async () => {
     const res = await axios.post("http://localhost:4000/api/recipes/delete", {
-    // const res = await axios.post("https://dbms-project-e4a5.onrender.com/api/recipes/delete", {
       Name: name,
     });
     console.log(res);
     nav("/profile");
-    // window.location.reload();
   };
   return (
     <>
       <div className="bg-orange-50 w-[1200px] h-[100px] m-4 rounded-xl flex items-center justify-around font-serif shadow-lg">
         <img
-          // src="photos/chicken_tikka.jpeg"
           src={props.url}
           alt=""
           className="rounded-full h-[75px] "

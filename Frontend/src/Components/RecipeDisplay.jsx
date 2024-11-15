@@ -66,7 +66,6 @@ function RecipeDisplay() {
         </button>
         <Fade bottom className="flex justify-around items-center w-screen">
           <img
-            // src="/photos/chicken_tikka.jpeg "
             src={vals.url}
             className="h-[600px] w-[75%]  rounded-2xl shadow-xl"
           />
@@ -128,28 +127,7 @@ function RecipeDisplay() {
                   );
                 })}
 
-                {/* 1. 1 pound boneless chicken, cut into bite-sized pieces
-                <br />
-                2. 1 cup plain yogurt
-                <br />
-                3. 2 tablespoons ginger-garlic paste
-                <br />
-                4. 1 tablespoon red chili powder
-                <br />
-                5. 1 tablespoon turmeric powder
-                <br />
-                6. 1 tablespoon cumin powder
-                <br />
-                7. 1 tablespoon coriander powder
-                <br />
-                8. 1 tablespoon garam masala
-                <br />
-                9. 2 tablespoons lemon juice
-                <br />
-                10. 2 tablespoons vegetable oil
-                <br />
-                11. Salt to taste
-                <br /> */}
+               
               </>
             </div>
           </div>
@@ -166,28 +144,7 @@ function RecipeDisplay() {
                   );
                 })}
 
-                {/* 1. Gather ingredients including chicken, yogurt, spices, and
-                lemon juice. <br />
-                2. Prepare a spicy yogurt marinade by mixing ingredients in a
-                bowl.
-                <br />
-                3. Coat chicken pieces with the marinade and refrigerate for at
-                least 2 hours.
-                <br />
-                4. Preheat grill or oven to medium-high heat.
-                <br />
-                5. Soak wooden skewers if using.
-                <br />
-                6. Thread marinated chicken onto skewers.
-                <br />
-                7. Grill for 15-20 minutes, turning occasionally.
-                <br />
-                8. Baste chicken with oil or butter for moisture and flavor.
-                <br />
-                9. Check chickens internal temperature (165°F or 74°C).
-                <br />
-                10. Serve hot with your choice of accompaniments.
-                <br /> */}
+              
               </>
             </div>
           </div>
@@ -199,12 +156,3 @@ function RecipeDisplay() {
 
 export default RecipeDisplay;
 
-// {vals.ingredients.map((d,index) => {
-//   return (
-//     <>
-//       <p>{(index+1)+". " + d}</p>
-
-//     </>
-//   );
-
-// })}

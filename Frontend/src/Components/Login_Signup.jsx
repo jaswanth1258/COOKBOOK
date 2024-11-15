@@ -5,14 +5,12 @@ import SignUp from "./SignUp";
 function Login_Signup() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    // window.location.reload()
   }, []);
 
   useEffect(() => {
     const hasReloaded = localStorage.getItem("login");
     localStorage.removeItem("profiles");
     if (!hasReloaded) {
-      // Reload the page only once
       localStorage.setItem("login", "true");
       window.location.reload();
     }

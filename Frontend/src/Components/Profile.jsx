@@ -6,11 +6,9 @@ import { useDispatch } from "react-redux";
 import { authActions } from "../../store/store";
 import axios from "axios";
 import { requireAuth } from "../../utils";
-// eslint-disable-next-line react-refresh/only-export-components
 export function loader() {
   if (requireAuth()) {
     return axios.post("http://localhost:4000/api/users/userRecipes", {
-      // return axios.post("https://dbms-project-e4a5.onrender.com/api/users/userRecipes", {
       _id: localStorage.getItem("userId"),
     });
   } else {
@@ -47,26 +45,7 @@ function Profile() {
     }
   }, []);
 
-  // useEffect(() => {
-  //   const temp = async () => {
-  //     setLoading(true);
-  //     const res = await axios.post(
-  //       "http://localhost:4000/api/users/userRecipes",
-  //       {
-  //         _id: localStorage.getItem("userId"),
-  //       }
-  //     );
-  //     setUser(res.data.user);
-  //     setRecipes(res.data.user.recipes);
-  //     if (res.data.user.recipes.length > 0) {
-  //       setIsRecipes(true);
-  //     }
-  //     // console.log(res);
-  //     setLoading(false);
-  //   };
-  //   console.log(vals);
-  //   temp();
-  // }, []);
+  
 
   const nav = useNavigate();
   return (

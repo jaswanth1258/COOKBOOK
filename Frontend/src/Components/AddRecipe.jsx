@@ -10,7 +10,6 @@ function AddRecipe() {
   const [stat, setStat] = useState("");
   const [procedure_, setProcedure] = useState("");
   const [ingredients_, setIngredients] = useState([]);
-  // const [temp, setTemp] = useState("");
   const [submit, setSubmit] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
